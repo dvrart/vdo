@@ -1,0 +1,80 @@
+.footer
+    background: #128BE1
+    padding: 15px 50px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    +mq(lg)
+        padding: 25px 15px 25px 15px 
+    +mq(md)
+        padding: 36px 15px 30px 15px 
+        text-align: center
+        flex-direction: column
+
+    &__mail
+        +mq(md)
+            margin-bottom: 14px
+            margin-right: 0
+        a
+            font-weight: bold
+            font-size: 12px
+            line-height: 18px
+            text-transform: uppercase
+            color: #fff
+            text-decoration: none
+
+    &__menu 
+        +mq(md)
+            // display: flex
+            // justify-content: center
+            
+        ul 
+            display: flex
+            align-items: center
+            margin: 0
+            padding: 0
+            list-style: none
+            +mq(md)
+                flex-direction: column
+                justify-content: center
+            li 
+                margin-right: 45px
+                +mq(md)
+                    margin-right: 0
+                    margin-bottom: 14px
+
+                a
+                    color: #fff
+                    text-decoration: none
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 18px
+                    text-transform: uppercase
+    &__copy
+        color: #fff
+        text-decoration: none
+        font-weight: 500
+        font-size: 12px
+        line-height: 18px
+        text-transform: uppercase
+        margin-right: 45px
+        +mq(lg)
+            margin-right: 30px
+        +mq(md)
+            text-align: center
+            margin-bottom: 14px
+            margin-right: 0
+
+    
+    &__soc
+        display: flex
+        align-items: center
+        margin-left: auto
+        +mq(md)
+            margin-left: 0
+            justify-content: center
+            flex-direction: column
+        a 
+            margin-left: 30px
+            +mq(md)
+                margin: 0 15px

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>VDOlink</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#">
+                <img src="./img/logo.svg" alt="">
+            </a>
+        </div>
+        <div class="header__menu">
+            <ul>
+                <li>
+                    <a href="#benefits"  class="scroll-section">Pourquoi VDOLink</a>
+                </li>
+                <li >
+                    <a href="#comment"  class="scroll-section">COMMENT ÇA MARCHE</a>
+                </li>
+               
+                <li >
+                    <a href="#video"  class="scroll-section">LES BÉNÉFICES DE LA VIDÉO</a>
+                </li>
+            </ul>
+            <div class="header__menu-btn">
+                <a href="#" class="btn">Je m'inscris</a>
+            </div>
+        </div>
+        <div class="header__btn">
+            <a href="#form" class="btn scroll-section">Je m'inscris</a>
+            <div class="hamburger">
+                <div class="hamburger__icon"></div>				
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 col-md-6">
+                        <div class="intro__content">
+                            <div class="intro__title">
+                                Vivez votre <span>recrutement</span>  comme une véritable <span>expérience humaine.</span>  
+                            </div>
+                            <div class="intro__text">
+                                <b>VDOLink</b>  est une plateforme novatrice de mise en relation entre recruteurs et candidats, via le support vidéo.CV et offres d'emploi sont consultables en format vidéo.Conçue comme un réseau social, elle vous permet de vivre une expérience riche et unique
+                            </div>
+                            <div class="intro__btn d-none d-md-block">
+                                <a href="#form" class="btn scroll-section">Commencez l'expérience !</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-6 col-md-6">
+                        <div class="intro__img">
+                            <img src="./img/intro-img.svg" alt="image">
+                        </div>
+                        <div class="intro__btn  d-md-none">
+                            <a href="#form"  class="btn scroll-section">Commencez l'expérience !</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits" id="benefits">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="benefits-item">
+                            <div class="benefits-item__icon">
+                                <img src="./img/b-icon-1.svg" alt="">
+                            </div>
+                            <div class="benefits-item__title">L’Humain avant tout</div>
+                            <div class="benefits-item__text">Notre priorité est de préserver le côté humain et authentique, propre à chacun, et de susciter une émotion grâce à la vidéo</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="benefits-item">
+                            <div class="benefits-item__icon">
+                                <img src="./img/b-icon-2.svg" alt="">
+                            </div>
+                            <div class="benefits-item__title">Accessible à tous</div>
+                            <div class="benefits-item__text">La plateforme est facile d’utilisation, intuitive : Les créations vidéo sont simplifiées, ainsi réalisez la vôtre, rapidement et en toute simplicité.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="benefits-item">
+                            <div class="benefits-item__icon">
+                                <img src="./img/b-icon-3.svg" alt="">
+                            </div>
+                            <div class="benefits-item__title">Connexion facilitée</div>
+                            <div class="benefits-item__text">Nous favorisons la communication et les interactions entre recruteurs et candidats, grâce à un chat et à la possibilité d’appels vidéo.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="notre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="notre__img">
+                            <img src="./img/notre-img.svg" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="notre__list">
+                            <div class="notre-item">
+                                <p>
+                                    <b>Notre constat:</b> Dans un contexte où le candidat est de plus en plus exigeant dans sa course à l'emploi, 
+                                    où le recruteur est à la recherche active d’un talent exceptionnel, le format papier atteint vite ses limites. 
+                                    CV, lettres de motivation et offres d'emploi n’individualisent pas, ne personnalisent pas le recrutement.
+                                </p>
+                            </div>
+                            <div class="notre-item">
+                                <p>
+                                    <b>Notre outil, la vidéo:</b>  Le format de l’image et du son est le seul à pouvoir transmettre des émotions, 
+                                    porter des valeurs, faire passer un message. De nombreux éléments passent inaperçus à l'écrit : Le regard, la passion, 
+                                    la façon de se présenter. 
+                                    La vidéo est un véritable outil d’expression qui permet d'incarner et de témoigner des valeurs.
+                                </p>
+                            </div>
+                            <div class="notre-item">
+                                <p>
+                                    <b>Notre mission:</b> Réinventer le recrutement, en lui donnant une toute nouvelle dimension, 
+                                    bien plus humaine que sur le papier en créant un écosystème humain, ouvert à la diversité, 
+                                    à l'inclusion, autant par la variété des profils candidats que par la richesse des profils recruteurs. 
+                                    VDOLink permet à tous de pouvoir se rencontrer et d'accomplir rapidement leur mission.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comment" id="comment">
+            <div class="container">
+                <div class="title">Comment ça marche ?</div>
+                <div class="comment__items">
+                    <div class="row comment__slider">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="comment-item">
+                                <div class="comment-item__numb">
+                                    <img src="./img/comment-num-1.svg" alt="">
+                                </div>
+                                <div class="comment-item__icon">
+                                    <img src="./img/comment-img-1.svg" alt="">
+                                </div>
+                                <div class="comment-item__title">Dites-nous qui vous êtes</div>
+                                <div class="comment-item__list">
+                                    <ul>
+                                        <li><span></span> Inscrivez-vous et créez votre profil, rapidement en quelques clics</li>
+                                        <li><span></span> Constituez le CV ou l'offre d'emploi vidéo à l'aide de  notre outil en ligne</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="comment-item">
+                                <div class="comment-item__numb">
+                                    <img src="./img/comment-num-2.svg" alt="">
+                                </div>
+                                <div class="comment-item__icon">
+                                    <img src="./img/comment-img-2.svg" alt="">
+                                </div>
+                                <div class="comment-item__title">Recherchez selon vos critères</div>
+                                <div class="comment-item__list">
+                                    <ul>
+                                        <li><span></span> Une fois publié, rejoignez la base de donnée des CV et des offres d'emploi</li>
+                                        <li><span></span> Profitez de la recherche ciblée pour trouvez les candidats/recruteurs qui  vous correspondent</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="comment-item">
+                                <div class="comment-item__numb">
+                                    <img src="./img/comment-num-3.svg" alt="">
+                                </div>
+                                <div class="comment-item__icon">
+                                    <img src="./img/comment-img-3.svg" alt="">
+                                </div>
+                                <div class="comment-item__title">Contactez et échangez !</div>
+                                <div class="comment-item__list">
+                                    <ul>
+                                        <li><span></span> Prenez contact pour un Matching parfait</li>
+                                        <li><span></span> Communiquez en toute fluidité à l'aide des outils intégrés : chat/vidéo et partage de fichiers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="comment__slider-next">Next</div> -->
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="video" id="video">
+            <div class="container">
+                <div class="title">Les avantages de la vidéo selon votre profil</div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="video-item video-item_blue">
+                            <div class="video-item__title">Je suis <span>Candidat</span></div>
+                            <div class="video-item__video">
+                                <!-- <img src="./img/video-blue.jpg" alt=""> -->
+                                <img src="./img/video-img-1.svg" alt="">
+                            </div>
+                            <div class="video-item__text">
+                                Profil classique ou atypique, jeune diplômé, cadre, ou encore travailleur handicapé, 
+                                quel que soit votre profil, venez découvrir un processus humain au service des
+                                spécificités de chacun.
+                            </div>
+                            <div class="video-item__more">
+                                <span>Découvrez les avantages candidat</span>
+                            </div>
+                            <div class="video-item__content">
+                               
+                                <div class="video-item__list">
+                                    <div class="video-list-item">
+                                        <div class="video-list-item__icon">
+                                            <img src="./img/video-icon-1.svg" alt="">
+                                        </div>
+                                        <div class="video-list-item__cont">
+                                            <div class="video-list-item__title">Candidatez tel que vous êtes</div>
+                                            <div class="video-list-item__text">
+                                                Le support vidéo vous permet de valoriser votre personnalité, vos qualités humaines, 
+                                                vos compétences comportementales, en réalisant une candidature vivante et authentique.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-list-item">
+                                        <div class="video-list-item__icon">
+                                            <img src="./img/video-icon-2.svg" alt="">
+                                        </div>
+                                        <div class="video-list-item__cont">
+                                            <div class="video-list-item__title">Exposez votre identité, votre singularité</div>
+                                            <div class="video-list-item__text">
+                                                La vidéo vous permet de mettre en avant un profilatypique, un parcours 
+                                                professionnel particulier, demontrer votre différence.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-list-item">
+                                        <div class="video-list-item__icon">
+                                            <img src="./img/video-icon-3.svg" alt="">
+                                        </div>
+                                        <div class="video-list-item__cont">
+                                            <div class="video-list-item__title">Mettez en avant vos compétences uniques</div>
+                                            <div class="video-list-item__text">
+                                                Ce support vous permet d’exposer une compétence particulière, un talent spécifique, ou encore 
+                                                d’accentuer une expérience professionnelle plus explicitement, que sur format papier.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="video-item__img">
+                                    <img src="./img/video-img-1.svg" alt="">
+                                </div> -->
+                                <div class="video-item__footer">
+                                    <span>Votre personnalité et votre talent ne feront qu’un</span>
+                                    <p>Devenez <span>VDO</span>candidat!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="video-item video-item_orange">
+                            <div class="video-item__title">Je suis <span>Recruteur</span></div>
+                            <div class="video-item__video">
+                                <!-- <img src="./img/video-orange.jpg" alt=""> -->
+                                <img src="./img/video-img-2.svg" alt="">
+                            </div>
+                            <div class="video-item__text">
+                                Starts up, entrepreneurs, PME, grands groupes ou encore cabinets de recrutement, 
+                                découvrez les clés pour un recrutement de qualité.
+                            </div>
+                            <div class="video-item__more">
+                                <span>Découvrez les avantages recruteur </span>
+                            </div>
+                            <div class="video-item__content">
+                                
+                                <div class="video-item__list">
+                                    <div class="video-list-item">
+                                        <div class="video-list-item__icon">
+                                            <img src="./img/video-icon-4.svg" alt="">
+                                        </div>
+                                        <div class="video-list-item__cont">
+
+                                            <div class="video-list-item__title">Gagnez du temps</div>
+                                            <div class="video-list-item__text">
+                                                Terminées les piles de CV ! Sélectionnez les candidats en 
+                                                navigant rapidement entre les différent profils vidéo. 
+                                                Le gain de temps est considérable par une prise de contact rapide et efficace.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-list-item">
+                                        <div class="video-list-item__icon">
+                                            <img src="./img/video-icon-5.svg" alt="">
+                                        </div>
+                                        <div class="video-list-item__cont">
+                                            <div class="video-list-item__title">Soyez performant</div>
+                                            <div class="video-list-item__text">
+                                                Le format vidéo vous permet de détecter les talents, de percevoir certaines qualités difficilement repérables, 
+                                                voire même invisibles, sur le papier. Votre pré-sélection est optimisée et productive.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-list-item">
+                                        <div class="video-list-item__icon">
+                                            <img src="./img/video-icon-6.svg" alt="">
+                                        </div>
+                                        <div class="video-list-item__cont">
+                                            <div class="video-list-item__title">Transmettez votre ADN</div>
+                                            <div class="video-list-item__text">
+                                                L’offre vidéo vos permet de racontez une histoire impactante en dévoilant votre image, 
+                                                votre culture et vos valeurs. Ainsi, seuls les profils réellement intéressés par votre offre postuleront.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="video-item__img">
+                                    <img src="./img/video-img-2.svg" alt="">
+                                </div> -->
+                                <div class="video-item__footer">
+                                    <span>Recrutez en toute sérénité vos futurs talents</span>
+                                    <p>Devenez <span>VDO</span>recruteur!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-10 offset-xl-2  offset-lg-1">
+                        <div class="form__title" id="form">Rejoignez-nous</div>
+                        <div class="form__subtitle">& vivez pleinement l’expérience</div>
+                        <div class="form__wrapper">
+                            <form action="/">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form__tabs">
+                                            <div class="form__tabs-item">
+                                                <span>Je suis: * </span>
+                                            </div>
+                                            
+                                            <div class="form__tabs-item" data-trigger='candidat_select'>
+                                                <input id="candidat" type="radio" name='Je-suis' value="Je-suis candidat" checked>
+                                                <label for="candidat">Candidat</label>
+                                            </div>
+                                            <div class="form__tabs-item" data-trigger='recruteur_select'>
+                                                <input id="recruteur" type="radio" name='Je-suis' value="Je-suis recruteur">
+                                                <label for="recruteur" >Recruteur</label>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group tab_content" id="candidat_select"  data-content='candidat_select'>
+                                            <select class="form_select" name="Je-suis-selected" id="">
+                                                <option>Choisir une option *</option>
+                                                <option value="En recherche d’emploi">En recherche d’emploi</option>
+                                                <option value="Stage, alternance">Stage, alternance</option>
+                                                <option value="Freelance">Freelance</option>
+                                                <option value="Autre">Autre</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group tab_content" id="recruteur_select" data-content='recruteur_select'>
+                                            <select class="form_select" name="Je-suis-selected" id="">
+                                                <option>Choisir une option *</option>
+                                                <option value="Start-up">Start-up</option>
+                                                <option value="PME">PME</option>
+                                                <option value="Grand groupe">Grand groupe</option>
+                                                <option value="Cabinet de recrutement">Cabinet de recrutement</option>
+                                                <option value="Agence d’intérim">Agence d’intérim</option>
+                                                <option value="Indépendant">Indépendant</option>
+                                                <option value="Autre">Autre</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Nom *">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Prénom *">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="mail" placeholder="Email *">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="" placeholder="Votre message" id="" ></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="privacy">
+                                            <label for="privacy">
+                                                En cochant cette case et en soumettant ce formulaire, j'accepte que mes données personnelles soient
+                                                 utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations.
+                                            </label>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-btn">
+                                            <button class="btn form-btn-submit" type="submit" value="Je m’inscris">Je m’inscris</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <footer class="footer">
+       
+        <div class="footer__copy">© VDOLINK 2021</div>
+        <div class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">GESTION DES COOKIES</a>
+                </li>
+                <li>
+                    <a href="#">MENTIONS LÉGALES</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="footer__soc">
+            <div class="footer__mail">
+                <a href="mailto:Contact@vdolink.com">Contact@vdolink.com</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <img src="./img/f_in.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/f_fb.svg" alt="">
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js" integrity="sha512-GkPcugMfi6qlxrYTRUH4EwK4aFTB35tnKLhUXGLBc3x4jcch2bcS7NHb9IxyM0HYykF6rJpGaIJh8yifTe1Ctw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

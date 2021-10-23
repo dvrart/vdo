@@ -1,0 +1,213 @@
+.comment
+    margin-bottom: 130px
+    +mq(lg)
+        margin-bottom: 100px
+    +mq(md)
+        margin-bottom: 70px
+
+    &__slider
+        padding: 0 15px
+        .slick-list 
+            display: flex
+            .slick-track
+                display: flex
+                align-items: stretch
+                &::before
+                    display: none
+                &::after
+                    display: none
+                .slick-slide
+                    display: flex
+                    float: none
+                    height: 100% !important
+            
+            +mq(md)
+                padding: 50px 90px 33px 2px
+            +mq(sm) 
+                padding: 50px 40px 33px 2px
+        
+        .slick-dots
+            list-style: none
+            display: flex
+            padding: 0 0 0 4px
+            justify-content: center
+            li 
+                width: 10px
+                height: 10px
+                background: #BFE5FF
+                border-radius: 50%
+                margin-right: 18px
+                position: relative
+                &.slick-active
+                    &::after
+                        content: ''
+                        width: 18px
+                        height: 18px
+                        border-radius: 50%
+                        position: absolute
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%, -50%)
+                        border: 2px solid $main
+                    &::before
+                        content: ''
+                        width: 4px
+                        height: 4px
+                        border-radius: 50%
+                        position: absolute
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%, -50%)
+                        background: rgba(18, 139, 225, 0.1)
+
+
+            button
+                display: none
+    &__items
+        padding-top: 55px
+        position: relative
+        +mq(md) 
+            padding-top: 30px
+
+        .comment__slider-next
+            position: absolute
+            right: 0px
+            bottom: -7px
+            color: $main
+            font-size: 15px
+            line-height: 22px
+            padding-right: 40px
+            display: none
+            +mq(md)
+                display: block
+            &::after
+                content: ''
+                height: 1px
+                width: 21px
+                background: $main
+                position: absolute
+                right: 0
+                top: 50%
+
+        .row
+            .col-lg-4
+                +mq(md)
+                    padding: 0 5px !important
+                +mq(lg)
+                    padding: 0 10px !important
+                &:nth-child(1)
+                    .comment-item
+                        margin-right: 10px
+                &:nth-child(2)
+                    .comment-item
+                        margin: 0 5px
+                &:nth-child(3)
+                    .comment-item
+                        margin-left: 10px
+
+        
+        
+        .comment-item
+            border-radius: 19px
+            position: relative
+            background: #fff
+            height: 100%
+            padding: 100px 50px 48px 50px
+            +mq(xl) 
+                padding: 70px 20px 38px 20px
+                margin: 0 !important
+            +mq(lg) 
+                padding: 55px 15px 30px 15px
+            +mq(md) 
+                margin-right: 0px !important
+
+            
+            &::before 
+                content: ""
+                position: absolute
+                top: -2px
+                bottom: -2px
+                left: -2px
+                right: -2px
+                background: linear-gradient(155deg, #1197F9, #5CBEFF)
+                border-radius: 21px
+                z-index: -1
+
+            &__numb
+                position: absolute
+                left: 50%
+                top: 0
+                transform: translate(-50%, -50%)  
+                // background: #fff
+                border-radius: 50%  
+                // overflow: hidden
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    right: 2px
+                    bottom: 0
+                    left: 2px
+                    background: #fff
+                    z-index: 1
+                    border-radius: 50%
+                img 
+                    position: relative
+                    z-index: 2
+                    +mq(lg) 
+                        width: 84px
+            &__icon
+                text-align: center
+                margin-bottom: 48px
+                +mq(xl)
+                    margin-bottom: 24px
+                
+                img 
+                    +mq(lg)
+                        width: 150px
+                    +mq(md)
+                        width: 120px
+                        display: inline-block
+                
+            &__title
+                font-weight: bold
+                font-size: 20px
+                line-height: 32px
+                text-align: center
+                margin-bottom: 30px
+                +mq(lg)
+                    margin-bottom: 24px
+                    font-size: 18px
+                    line-height: 26px
+
+            &__list
+                ul
+                    list-style: none
+                    margin: 0
+                    padding: 0
+
+                    li
+                        font-size: 15px
+                        line-height: 24px
+                        margin-bottom: 18px
+                        position: relative
+                        text-align: justify
+                        +mq(md)
+                            font-size: 14px
+                            line-height: 22px
+                            margin-bottom: 12px
+                        span
+                           
+                            width: 8px
+                            height: 8px
+                            display: inline-block
+                            border-radius: 50% 
+                            background: #000
+                            margin-right: 3px
+                            margin-bottom: 2px
+                            +mq(md)
+                                width: 8px
+                                height: 8px
+                    
+    
+            

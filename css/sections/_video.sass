@@ -1,0 +1,193 @@
+.video
+    +mq(md)
+        margin-bottom: 18px
+    &-item
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+        padding: 56px 90px 48px 90px
+        background: #fff
+        height: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        +mq(xl)
+            padding: 45px 30px 35px 30px
+        +mq(lg)
+            padding: 28px 15px 25px 15px
+        +mq(md)
+            padding: 28px 25px 15px 25px
+            margin-bottom: 30px
+            height: auto
+        &_blue
+            border: 4px solid $main
+            .video-item__title
+                span
+                    color: $main
+            .video-item__footer
+                p
+                    span
+                        color: $main
+        &_orange
+            border: 4px solid #FFB381
+            .video-item__title
+                span
+                    color: #FFB381
+            .video-item__footer
+                p
+                    span
+                        color: #FFB381
+
+        &__title
+            font-weight: bold
+            font-size: 36px
+            line-height: 48px
+            margin-bottom: 48px
+            text-align: center
+            +mq(lg)
+                margin-bottom: 24px
+                font-size: 28px
+                line-height: 36px
+            +mq(md)
+                font-size: 24px
+        &__video  
+            text-align: center
+            margin-bottom: 56px
+            +mq(lg)
+                margin-bottom: 24px
+                img
+                    max-width: 200px
+            +mq(md)
+                margin-bottom: 17px
+                img
+                    max-width: 150px
+        &__more
+            display: none
+            +mq(md)
+                text-align: center
+                display: flex
+                justify-content: center
+                color: $main
+                font-weight: bold
+                font-size: 14px
+                line-height: 22px
+                position: relative
+                margin-bottom: 10px
+                span
+                    display: inline-block
+                    position: relative
+                    &::after
+                        content: ''
+                        width: 12px
+                        display: block
+                        height: 7px
+                        background: url(../img/arrow.svg)
+                        background-size: cover
+                        background-repeat: no-repeat
+                        position: absolute
+                        right: -20px
+                        top: 9px
+                        transition: 0.2s
+            &.active
+                span
+                    &::after
+                        transform: rotate(180deg)
+
+        &__content
+            margin-top: auto
+            // height: 100%
+            // display: flex
+            // flex-direction: column
+
+            +mq(md)
+                // padding-top: 10px
+                display: none
+        &__text
+            margin-bottom: 36px
+            font-size: 16px
+            line-height: 28px
+            +mq(lg)
+                margin-bottom: 24px
+            +mq(md)
+                font-size: 14px
+                line-height: 20px
+
+        &__list
+            +mq(md)
+                padding-top: 15px
+            .video-list-item
+                display: flex
+                margin-bottom: 36px
+                +mq(md)
+                    margin-bottom: 24px
+                &__icon
+                    min-width: 68px
+                    margin-right: 36px
+                    +mq(lg)
+                        min-width: 50px
+                        margin-right: 25px
+                    +mq(md)
+                        min-width: 36px
+                        margin-right: 15px
+                &__title
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 26px
+                    color: $main
+                    margin-bottom: 24px
+                    padding-top: 20px
+                    +mq(lg)
+                        padding-top: 0
+                        margin-bottom: 14px
+                    +mq(md)
+                        font-size: 16px
+                        line-height: 24px
+                &__text
+                    font-size: 14px
+                    line-height: 22px
+                    +mq(md)
+                        line-height: 20px
+        &__img
+            text-align: center
+            margin-bottom: 56px
+            padding-top: 20px
+            +mq(lg)
+                margin-bottom: 24px
+
+            +mq(lg)
+                padding-top: 0px
+            img
+                +mq(lg)
+                    max-width: 280px
+                +mq(md)
+                    max-width: 220px
+        
+        &__footer
+            text-align: center
+            // margin-top: auto
+            span 
+                font-weight: bold
+                font-size: 18px
+                line-height: 32px
+                margin-bottom: 14px
+                display: inline-block
+                color: #000
+                +mq(lg)
+                    margin-bottom: 6px
+                    font-size: 15px
+                    line-height: 24px
+            p 
+                font-weight: bold
+                font-size: 28px
+                line-height: 40px
+                margin-bottom: 0
+                +mq(lg)
+                    font-size: 18px
+                    line-height: 36px
+
+                span 
+                    font-weight: bold
+                    font-size: 28px
+                    line-height: 40px
+                    +mq(lg)
+                        font-size: 18px
+                        line-height: 36px
+

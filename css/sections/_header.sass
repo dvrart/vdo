@@ -1,0 +1,189 @@
+.header
+    padding: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: sticky
+    top: 0
+    z-index: 3
+    background: #fff
+    transition: 0.3s
+    +mq(xxxl)
+        padding: 40px
+    +mq(xxl)
+        padding: 30px
+    +mq(xl)
+        padding: 30px 15px
+    +mq(lg)
+        padding: 20px 15px
+
+    &_fixed
+        padding: 15px 50px
+        box-shadow: 0px 4px 20px #0000002e
+        +mq(xxxl)
+            padding: 15px 40px
+        +mq(xxl)
+            padding: 15px 30px
+        +mq(xl)
+            padding: 15px 15px
+        +mq(lg)
+            padding: 10px 15px
+        .header__btn 
+            .hamburger
+                top: 20px
+        .header__menu
+            +mq(lg)
+                top: 58px
+    &__logo
+        img
+            +mq(xl)
+                max-width: 140px
+
+    &__menu
+        flex-grow: 3
+        
+        +mq(lg)
+            position: fixed
+            left: 0%
+            top: 77px
+            width: 100%
+            transform: translate(0, calc(-100% - 77px) )
+            transition: 0.4s
+            background: #fff
+            border-bottom: 5px solid #6CC1FF
+            padding-bottom: 48px
+            z-index: 10
+        &--open
+            transform: translate( 0%,0)
+        ul
+            list-style: none
+            margin: 0
+            padding: 0
+            display: flex
+            justify-content: space-around
+            padding: 0 20px
+            align-items: center
+            +mq(lg)
+                flex-direction: column
+
+            li
+                padding: 0 10px 
+                +mq(lg)
+                    padding: 24px 15px
+
+            a 
+                text-decoration: none
+                font-size: 15px
+                text-transform: uppercase
+                color: #000
+                transition: 0.3s
+                &:hover
+                    color: $main
+                +mq(xl)
+                    font-size: 13px
+                +mq(lg)
+                    font-size: 15px
+        &-btn
+            display: none
+            +mq(lg)
+                display: flex
+                justify-content: center
+                padding-top: 24px
+            .btn
+                +mq(lg)
+                    max-width: 174px
+                    min-width: 174px
+
+    &__btn
+        
+        .btn
+            height: 48px
+            min-width: 174px
+            +mq(xl)
+                height: 40px
+                min-width: 150px
+            +mq(lg)
+                display: none
+        .hamburger
+            width: 25px
+            height: 18px
+            z-index: 99999
+            cursor: pointer
+            display: block
+            position: relative
+            cursor: pointer
+            position: absolute
+            right: 30px
+            top: 30px
+            display: none 
+            transition: 0.3s
+            +mq(lg)
+                display: block
+
+            &__icon 
+                width: 25px
+                height: 2px
+                background: $main
+                // background: #fff
+                position: absolute
+                border-radius: 15px
+                top: 50%
+                // left: 50%
+                -webkit-transition: 0.2s
+                -o-transition: 0.2s
+                -moz-transition: 0.2s
+                transition: 0.2s
+
+                &::before 
+                    content: ''
+                    width: 25px
+                    height: 2px
+                    background: $main
+                    position: absolute
+                    -webkit-transition: 0.2s
+                    -o-transition: 0.52s
+                    -moz-transition: 0.2s
+                    transition: 0.2s
+                    top: -9px
+                    left: 0
+                    border-radius: 15px
+                
+                &::after 
+                    content: ''
+                    width: 25px
+                    height: 2px
+                    background: $main
+                    position: absolute
+                    -webkit-transition: 0.2s
+                    -o-transition: 0.2s
+                    -moz-transition: 0.2s
+                    transition: 0.2s
+                    top: 9px
+                    left: 0
+                    border-radius: 15px
+                
+
+                &.active 
+                    background: transparent
+
+                    &::before 
+                        -webkit-transform: rotate(45deg)
+                        -moz-transform: rotate(45deg)
+                        -ms-transform: rotate(45deg)
+                        -o-transform: rotate(45deg)
+                        transform: rotate(45deg)
+                        top: 0
+                        background: $main
+                    
+                    &::after 
+                        -webkit-transform: rotate(-45deg)
+                        -moz-transform: rotate(-45deg)
+                        -ms-transform: rotate(-45deg)
+                        -o-transform: rotate(-45deg)
+                        transform: rotate(-45deg)
+                        top: 0
+                        background: $main
+                    
+                
+			
+		

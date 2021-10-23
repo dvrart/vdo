@@ -1,0 +1,195 @@
+.form
+    // height: 100vh
+    background: url(../img/form-bg.png)
+    background-repeat: no-repeat
+    background-position: right bottom
+    background-size: cover
+    padding-top: 315px
+    padding-bottom: 150px
+    margin-top: -166px
+    +mq(md)
+        margin-top: 0
+        padding-top: 48px
+        padding-bottom: 48px
+
+    &__title    
+        text-align: center
+        font-weight: bold
+        font-size: 36px
+        line-height: 48px
+        color: $main
+        margin-bottom: 12px
+        +mq(md)
+            font-size: 21px
+            line-height: 36px
+            margin-bottom: 0
+    &__subtitle
+        text-align: center
+        font-weight: bold
+        font-size: 36px
+        line-height: 48px
+        color: #000
+        margin-bottom: 84px
+        +mq(md)
+            font-size: 21px
+            line-height: 36px
+            margin-bottom: 24px
+
+    #recruteur_select
+        display: none
+    &__tabs
+        display: flex
+        justify-content: space-around
+        margin-bottom: 84px
+        +mq(md)
+            flex-wrap: wrap
+            margin-bottom: 24px
+
+        .form__tabs-item
+            font-style: normal
+            font-weight: bold
+            font-size: 21px
+            line-height: 30px
+            +mq(md)
+                font-size: 16px
+                line-height: 30px
+                &:first-child
+                    text-align: center
+                    width: 100%
+                    margin-bottom: 18px
+            input 
+                display: none
+
+                &:checked + label::before
+                    content: ''
+                    width: 8px
+                    height: 8px
+                    background: #000
+                    display: block
+                    border-radius: 50%
+                    position: absolute
+                    top: 10px
+                    left: -20px
+                    
+            label
+                position: relative
+                cursor: pointer
+                &::after
+                    content: ''
+                    width: 16px
+                    height: 16px
+                    border: 2px solid #000
+                    display: block
+                    border-radius: 50%
+                    position: absolute
+                    top: 6px
+                    left: -24px
+                // &::before
+                   
+
+    &__wrapper
+        .form-group
+            margin-bottom: 30px
+            border-bottom: 1px solid $main
+            input,
+            textarea,
+            select
+                background: #ffffff00
+                width: 100%
+                border: none
+                outline: none
+                padding: 15px 14px
+                font-size: 16px
+                line-height: 24px
+                
+                &::placeholder
+                    color: #1D232B
+            textarea
+                // height: 93px
+                // max-height: 93px
+                min-height: 105px
+                height: auto
+
+        .form_select
+            padding: 15px 14px
+            float: none
+            height: auto
+            font-size: 16px
+            line-height: 24px
+            background: #ffffff00
+            border-radius: 0
+            border: none
+            &::after 
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 8px 8px 0 8px
+                border-color: #000000 transparent transparent transparent
+                transform: rotate(0deg)
+                transform-origin: 50% 50%
+            &.open
+                &::after 
+                    transform: rotate(180deg)
+                    border-color: $main transparent transparent transparent
+                .current
+                    color: $main
+
+            .current
+                font-size: 16px
+                line-height: 24px
+            
+            .list
+                right: 0
+                border-radius: 0
+                padding: 15px 0px
+
+                .option
+                    font-size: 16px
+                    line-height: 24px
+                    min-height: auto
+                    padding: 8px 14px
+                    &:hover
+                        background-color: transparent !important
+                        background: linear-gradient(81.04deg, rgba(108, 194, 255, 0.1) 19.51%, rgba(138, 208, 255, 0.1) 89.09%)
+
+                .selected 
+                    background-color: transparent !important
+                    background: linear-gradient(81.04deg, rgba(108, 194, 255, 0.1) 19.51%, rgba(138, 208, 255, 0.1) 89.09%)
+
+
+        .form-btn
+            margin-top: 34px
+            display: flex
+            justify-content: center
+            +mq(md)
+                margin-top: 6px
+
+.checkbox-item     
+    padding: 0 30px
+    input[type=checkbox] 
+        display: none
+
+        &:checked + label::before
+            content: ''
+            width: 8px
+            height: 8px
+            background: #000
+            display: block
+            // border-radius: 50%
+            position: absolute
+            top: 10px
+            left: -20px
+            
+        & + label
+            position: relative
+            cursor: pointer
+            &::after
+                content: ''
+                width: 16px
+                height: 16px
+                border: 2px solid #000
+                display: block
+                // border-radius: 50%
+                position: absolute
+                top: 6px
+                left: -24px
