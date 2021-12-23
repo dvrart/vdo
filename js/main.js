@@ -32,7 +32,6 @@ $(document).ready(function() {
     })
 
     // comment Slider /////////////
-    ///////////////////////////////
     
     if (window.matchMedia('(max-width: 767px)').matches) {
         
